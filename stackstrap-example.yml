@@ -1,0 +1,17 @@
+#
+# StackStrap meta-data
+#
+
+---
+template_name: Your template
+template_description:
+  Add your description here.
+
+cleanup:
+  - README.rst
+
+file_templates:
+  - Vagrantfile
+
+path_templates:
+  - PROJECT-README: README

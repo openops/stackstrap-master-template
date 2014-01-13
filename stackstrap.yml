@@ -1,0 +1,21 @@
+#
+# StackStrap meta-data
+#
+
+---
+template_name: StackStrap Master Template
+template_description:
+  This is the 'master' template used by StackStrap to create new templates.
+
+cleanup:
+  - README.rst
+
+file_templates:
+  - salt/root/top.sls
+  - salt/pillar/top.sls
+
+path_templates:
+  - salt/root/template.sls: 'salt/root/{{ name }}.sls'
+  - salt/pillar/template.sls: 'salt/pillar/{{ name }}.sls'
+  - TEMPLATE-README.rst: README.rst
+  - PROJECT-README: README
