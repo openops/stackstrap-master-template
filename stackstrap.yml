@@ -17,5 +17,6 @@ file_templates:
 path_templates:
   - salt/root/template.sls: 'salt/root/{{ name }}.sls'
   - salt/pillar/template.sls: 'salt/pillar/{{ name }}.sls'
+  - stackstrap-template.yml: stackstrap.yml
   - TEMPLATE-README.rst: README.rst
   - PROJECT-README: README
