@@ -19,4 +19,3 @@ path_templates:
   - salt/pillar/template.sls: 'salt/pillar/{{ name }}.sls'
   - stackstrap-template.yml: stackstrap.yml
   - TEMPLATE-README.rst: README.rst
-  - PROJECT-README: README
