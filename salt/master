@@ -1,0 +1,30 @@
+#
+# StackStrap salt master config
+#
+
+# listed on the loopback in open mode
+# this is so that our client does not need to have its key accepted
+# greatly simplifying the provisioning process
+interface: 127.0.0.1
+open_mode: True
+
+# use both the local roots as well as gitfs remotes
+fileserver_backend:
+  - roots
+  - git
+
+# map our project specific files to the local roots
+file_roots:
+  base:
+    - /vagrant/salt/root
+pillar_roots:
+  base:
+    - /vagrant/salt/pillar
+
+{% if 'salt_formulas' in template.meta -%}
+# setup our salt formulas as gitfs remotes
+gitfs_remotes:
+{% for formula in template.meta['salt_formulas'] -%}
+  - {{ formula }}
+{%- endfor %}
+{%- endif %}
