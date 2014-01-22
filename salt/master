@@ -16,10 +16,10 @@ fileserver_backend:
 # map our project specific files to the local roots
 file_roots:
   base:
-    - /project/salt/root
+    - /vagrant/salt/root
 pillar_roots:
   base:
-    - /project/salt/pillar
+    - /vagrant/salt/pillar
 
 {% if 'salt_formulas' in template.meta -%}
 # setup our salt formulas as gitfs remotes
