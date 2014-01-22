@@ -1,10 +1,9 @@
+#
+# StackStrap salt minion config
+#
+
+# connect to our local master
+master: 127.0.0.1
+
+# only report changed state items
 state_verbose: False
-file_client: local
-file_roots:
-  base:
-    - /project/salt/root
-    - /srv/salt
-pillar_roots:
-  base:
-    - /project/salt/pillar
-    - /srv/pillar
