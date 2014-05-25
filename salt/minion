@@ -19,7 +19,7 @@ pillar_roots:
 {% if 'salt_formulas' in template.meta -%}
 # setup our salt formulas as gitfs remotes
 gitfs_remotes:
-{% for formula in template.meta['salt_formulas'] -%}
+  {% for formula in template.meta['salt_formulas'] -%}
   - {{ formula }}
-{%- endfor %}
+  {%- endfor %}
 {%- endif %}
