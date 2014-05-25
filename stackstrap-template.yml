@@ -15,3 +15,6 @@ file_templates:
 
 path_templates:
   - PROJECT-README: README
+
+salt_formulas:
+  - https://github.com/saltstack-formulas/avahi-formula.git
