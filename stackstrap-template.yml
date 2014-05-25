@@ -13,6 +13,9 @@ cleanup:
 file_templates:
   - Vagrantfile
   - salt/minion
+  - salt/pillar/stackstrap.sls
+  - salt/root/top.sls
+  - salt/pillar/top.sls
 
 path_templates:
   - PROJECT-README: README
