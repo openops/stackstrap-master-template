@@ -8,7 +8,7 @@ template_description:
   Add your description here.
 
 cleanup:
-  - README.rst
+  - README.md
 
 file_templates:
   - Vagrantfile

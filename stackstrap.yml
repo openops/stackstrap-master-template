@@ -8,7 +8,7 @@ template_description:
   This is the 'master' template used by StackStrap to create new templates.
 
 cleanup:
-  - README.rst
+  - README.md
 
 file_templates:
   - salt/root/top.sls
@@ -18,4 +18,4 @@ path_templates:
   - salt/root/template.sls: 'salt/root/{{ name }}.sls'
   - salt/pillar/template.sls: 'salt/pillar/{{ name }}.sls'
   - stackstrap-template.yml: stackstrap.yml
-  - TEMPLATE-README.rst: README.rst
+  - TEMPLATE-README.md: README.md
